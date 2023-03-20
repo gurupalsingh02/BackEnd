@@ -17,7 +17,7 @@ const noteSchema = mongoose.Schema({
         type:String,
     },
     dateAdded:{
-        type:Int32Array,
+        type:Number,
         required :true,
     }
 });
