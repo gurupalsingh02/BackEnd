@@ -9,7 +9,7 @@ const mongoDbPath = 'mongodb+srv://gurupalsingh83:1234@cluster0.8gnitjr.mongodb.
 mongoose.connect (mongoDbPath).then(() =>{
 
   app.get('/',function(req,res){
-    const responce ={message:'API works'};
+    const responce ={statuscode:res.statusCode,message:'API works'};
   res.json(responce);
   });
 
