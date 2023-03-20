@@ -14,7 +14,8 @@ const Note = require('./../models/Note');
       id:req.body.id,
       userId:req.body.userId,
       title:req.body.title,
-      content:req.body.content
+      content:req.body.content,
+      dateAdded:req.body.dateAdded,
     });
     await newNote.save();
     const responce = {message:"new Node Created"+`id : ${req.body.id}`};
